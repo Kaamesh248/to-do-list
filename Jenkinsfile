@@ -3,8 +3,7 @@ pipeline{
         stages{
             stage('Clone Repository'){
                 steps{
-                    branch:main
-                    url:https://github.com/Kaamesh248/to-do-list
+                    git branch:'main',url:'https://github.com/Kaamesh248/to-do-list.git'
                 }
             }
             stage('Install dependencies'){
